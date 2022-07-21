@@ -3,16 +3,17 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
 } from "react-router-dom";
-import EventHandel from "./components/eventHandle";
+// import EventHandel from "./components/eventHandle";
+import Loginform from "./components/loginOptimize";
 
 
 const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/event" element={<EventHandel />} />
+        {/* <Route path="/event" element={<EventHandel />} /> */}
+        <Route path="/loginform" element={<Loginform/>}/>
       </Routes>
     </Router>
   );
