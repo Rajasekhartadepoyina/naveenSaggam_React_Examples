@@ -11,8 +11,6 @@ import FormHandling from "./components/formHandling";
 import ParentToChild from "./components/classBasedComp/parent";
 import Condition from "./components/conditional_list_render/conditional_list_render";
 import Digitalwatch from "./components/Digitalwatch";
-import EventHandel from "./components/eventHandle";
-import Navbar from './components/navbar'
 import Home from './components/modules/layout/home'
 import Employeeslist from './components/modules/employees/employeeslist'
 import About from './components/modules/layout/about'
