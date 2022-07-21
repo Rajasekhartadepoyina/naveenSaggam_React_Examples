@@ -5,8 +5,8 @@ import {
   Route,
 
 } from "react-router-dom";
+import Bcard from "./components/CountryCard/BcardDesing";
 import ContactApp from "./components/contactAPP/contactApp";
-import EventHandel from "./components/eventHandle";
 import Parent1 from "./components/parent1";
 import FormHandling from "./components/formHandling";
 import ParentToChild from "./components/classBasedComp/parent";
@@ -32,7 +32,9 @@ const AppRoutes = () => {
     <Router>
       {/* <Navbar /> */}
       <Routes>
-        <Route path="/event" element={<EventHandel />} />
+        {/* <Route path="/event" element={<EventHandel />} /> */}
+        <Route path="/bcard" element={<Bcard />} />
+        {/* <Route path="/event" element={<EventHandel />} /> */}
         <Route path="/contactapp" element={<ContactApp />} />
         <Route path="/form" element={<FormHandling />} />
         <Route path="/childtoparent" element={<Parent1 />} />
