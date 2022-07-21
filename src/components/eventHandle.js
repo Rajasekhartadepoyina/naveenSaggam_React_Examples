@@ -6,7 +6,7 @@ function EventHandel() {
     })
     const increment=()=>{
 
-        setCount({...count,state.counter})
+        // setCount({...count,state.counter})
 
     }
     const decrement=()=>{
