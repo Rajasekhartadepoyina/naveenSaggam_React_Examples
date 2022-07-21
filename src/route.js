@@ -5,6 +5,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+import Parent from "./components/classBasedComp/parent";
 import EventHandel from "./components/eventHandle";
 
 
@@ -13,6 +14,7 @@ const AppRoutes = () => {
     <Router>
       <Routes>
         <Route path="/event" element={<EventHandel />} />
+        <Route path="/Parent" element={<Parent />} />
       </Routes>
     </Router>
   );
