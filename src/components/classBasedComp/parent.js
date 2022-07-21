@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Employee from '../classBasedComp/employee';
-import '../../App.css';
+// import '../../App.css';
+import '../classBasedComp/classbase.css';
 
 let ParentToChild=()=>{
     return(

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { ContactService } from "./services/contactService";
-const ContactList = () => {
+const ContactList = (props) => {
   const data = ContactService;
-  console.log("DATA", data);
+
+const clickContact = (data) =>{
+props.sendContact(data);
+}
   return (
     <React.Fragment>
-      <h3>contactList</h3>
       <table className="table table-hover text-center table-striped">
         <thead className="bg-dark text-white">
           <tr>
@@ -19,7 +21,7 @@ const ContactList = () => {
           {
             data.length > 0 && data.map((each,index ) => {
               return (
-                <tr key={index}>
+                <tr key={index} onClick={() => clickContact(each)}>
                   <td>{each.id}</td>
                   <td>{each.name}</td>
                   <td>{each.username}</td>

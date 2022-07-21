@@ -26,6 +26,7 @@ import RegisterForm from "./components/registerForm";
 import Loginform from "./components/login/Loginform";
 import List from "./components/List";
 import EventHandel from "./components/eventHandle";
+import CherryServer from "./components/serverConnection/cherryServer";
 
 
 const AppRoutes = () => {
@@ -51,10 +52,10 @@ const AppRoutes = () => {
         <Route path="/digitalwatch" element={<Digitalwatch />} />
         <Route path="/functional" element={<Functional />} />
         <Route path="/tablemapping" element={<TableMapping />} />
+        <Route path="/CherryServer" element={<CherryServer />} />
         <Route path="/registerform" element={<RegisterForm />} />
         <Route path="/loginfrom" element={<Loginform />} />
         <Route path="/listtable" element={<List />} />
-
       </Routes>
     </Router>
   );

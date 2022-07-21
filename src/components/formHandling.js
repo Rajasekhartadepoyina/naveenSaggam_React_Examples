@@ -19,7 +19,7 @@ const FormHandling = () => {
                                 <p className='h4'>User Name</p>
 
                             </div>
-                            <div className='card-body bg-light'>
+                            <div className='card-body mt-3 bg-light'>
                                 <form>
                                     <div className='mb-3'>
 
