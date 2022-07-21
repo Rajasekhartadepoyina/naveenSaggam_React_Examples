@@ -21,6 +21,7 @@ import Parent from "./components/parent";
 import Functional from "./components/functional-component/functional";
 import TableMapping from "./components/mapTheTable/TableMapping";
 import RegisterForm from "./components/registerForm";
+import Loginform from "./components/login/Loginform";
 
 
 const AppRoutes = () => {
@@ -40,9 +41,10 @@ const AppRoutes = () => {
         <Route path="/parent_to_child" element={<Parent />} />
         <Route path="/ParentToChild" element={<ParentToChild />} />
         <Route path="/digitalwatch" element={<Digitalwatch />} />
-        <Route path="/functional" element={<Functional/>} />
+        <Route path="/functional" element={<Functional />} />
         <Route path="/tablemapping" element={<TableMapping />} />
-        <Route path="/registerform" element={<RegisterForm/>} />
+        <Route path="/registerform" element={<RegisterForm />} />
+        <Route path="/loginfrom" element={<Loginform />} />
 
       </Routes>
     </Router>
