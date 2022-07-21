@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Child() {
+function Child_State() {
   return (
     <div>child</div>
   )
 }
 
-export default Child;
+export default Child_State;

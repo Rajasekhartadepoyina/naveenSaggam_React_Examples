@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Child from './state_child';
-function Parent() {
+function Parent_State() {
   return (
     <div>
         <Fragment>
@@ -13,4 +13,4 @@ function Parent() {
   )
 }
 
-export default Parent
+export default Parent_State
