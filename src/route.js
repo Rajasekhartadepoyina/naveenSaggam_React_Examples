@@ -25,6 +25,7 @@ import TableMapping from "./components/mapTheTable/TableMapping";
 import RegisterForm from "./components/registerForm";
 import Loginform from "./components/login/Loginform";
 import List from "./components/List";
+import EventHandel from "./components/eventHandle";
 
 
 const AppRoutes = () => {
@@ -34,7 +35,7 @@ const AppRoutes = () => {
       <Routes>
         {/* <Route path="/event" element={<EventHandel />} /> */}
         <Route path="/bcard" element={<Bcard />} />
-        {/* <Route path="/event" element={<EventHandel />} /> */}
+        <Route path="/event" element={<EventHandel />} />
         <Route path="/contactapp" element={<ContactApp />} />
         <Route path="/form" element={<FormHandling />} />
         <Route path="/childtoparent" element={<Parent1 />} />
@@ -54,7 +55,6 @@ const AppRoutes = () => {
         <Route path="/registerform" element={<RegisterForm />} />
         <Route path="/loginfrom" element={<Loginform />} />
         <Route path="/listtable" element={<List />} />
-
       </Routes>
     </Router>
   );
