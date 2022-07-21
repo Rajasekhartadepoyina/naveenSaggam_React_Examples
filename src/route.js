@@ -14,7 +14,7 @@ const AppRoutes = () => {
     <Router>
       <Routes>
         <Route path="/event" element={<EventHandel />} />
-        <Route path="/list" element={<List />} />
+        <Route path="/tablelist" element={<List />} />
       </Routes>
     </Router>
   );
