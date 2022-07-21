@@ -1,7 +1,7 @@
 import React from "react";
 
 function Childprops(props) {
-  const { name, state ,age} = props;
+  const { name, state, age } = props;
   return (
     <div>
       {state}
