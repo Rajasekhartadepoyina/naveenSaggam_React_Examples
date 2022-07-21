@@ -60,6 +60,7 @@ const AppRoutes = () => {
         <Route path="/registerform" element={<RegisterForm />} />
         <Route path="/loginfrom" element={<Loginform />} />
         <Route path="/listtable" element={<List />} />
+      
 
       </Routes>
     </Router>
