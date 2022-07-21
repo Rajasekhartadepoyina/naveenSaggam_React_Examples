@@ -41,11 +41,11 @@ function EventHandel() {
             <h1>
                 Counter
             </h1>
-            <button onClick={increment}>
+            <button className=" btn-primary" onClick={increment}>
                 Increment
             </button>
             <h1>{count}</h1>
-            <button onClick={decrement}>Decrement</button>
+            <button className=" btn-danger"  onClick={decrement}>Decrement</button>
 
             <div >
                 <h1>Wish </h1>
@@ -93,4 +93,4 @@ function EventHandel() {
     )
 }
 
-export default EventHandel
+export default EventHandel;
