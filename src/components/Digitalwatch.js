@@ -21,20 +21,17 @@ let Digitalwatch = () => {
 
     return (
         <React.Fragment>
-            <div className='container mt-3'>
-                <div className='row'>
-                    <div className='Col-md-6'>
-                        <div className='card shadow-lg text-center'>
-                            <div className='card-header bg-warning'>
-                                <p className='h4'> Digital Watch </p>
-                            </div>
-                            <div className='card-body'>
-                                <h3 className='diaplay-4'> {state.currentTime} </h3>
-                            </div>
-                        </div>
+            <div className='container mt-3 w-25'>
+                <div className='card shadow-lg text-center'>
+                    <div className='card-header bg-warning'>
+                        <p className='h4'> Digital Watch </p>
+                    </div>
+                    <div>
+                        <h3> {state.currentTime} </h3>
                     </div>
                 </div>
             </div>
+
         </React.Fragment>
     )
 }
