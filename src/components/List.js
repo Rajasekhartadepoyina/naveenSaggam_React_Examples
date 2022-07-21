@@ -88,7 +88,7 @@ function List() {
                                         <div className="card-body">
                                             <div className="row">
                                                 <div className="col-md-4">
-                                                    <img src={product.img} alt="no img"  width="200" height={200}/>
+                                                    <img src={product.img} alt="no img" className="img-fluid"/>
                                                 </div>
                                                 <div className="col-md-6">
 

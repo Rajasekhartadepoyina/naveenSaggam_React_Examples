@@ -55,7 +55,7 @@ const AppRoutes = () => {
         <Route path="/tablemapping" element={<TableMapping />} />
         <Route path="/CherryServer" element={<CherryServer />} />
         <Route path="/registerform" element={<RegisterForm/>} />
-
+        <Route path="/tablelist" element={<List/>} />
       </Routes>
     </Router>
   );
