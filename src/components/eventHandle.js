@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+ import React, { useState } from 'react'
 
 function EventHandel() {
     let [count, setCount] = useState({
@@ -6,7 +6,7 @@ function EventHandel() {
     })
     const increment = () => {
 
-        // setCount({ ...count, state.counter })
+        setCount({...count})
 
     }
     const decrement = () => {
@@ -27,4 +27,4 @@ function EventHandel() {
     )
 }
 
-export default EventHandel
+export default EventHandel;
