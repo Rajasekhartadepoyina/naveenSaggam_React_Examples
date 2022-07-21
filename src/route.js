@@ -6,7 +6,6 @@ import {
 
 } from "react-router-dom";
 import ContactApp from "./components/contactAPP/contactApp";
-import EventHandel from "./components/eventHandle";
 import Parent1 from "./components/parent1";
 import FormHandling from "./components/formHandling";
 import ParentToChild from "./components/classBasedComp/parent";
