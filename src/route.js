@@ -22,7 +22,9 @@ import Userregister from './components/modules/users/components/userregister'
 import Pagenotfound from "./components/modules/layout/components/pagenotfound";
 import Student from "./components/student";
 import Parent from "./components/parent";
+import Functional from "./components/functional-component/functional";
 import TableMapping from "./components/mapTheTable/TableMapping";
+import RegisterForm from "./components/registerForm";
 
 
 const AppRoutes = () => {
@@ -44,7 +46,10 @@ const AppRoutes = () => {
         <Route path="/parent_to_child" element={<Parent />} />
         <Route path="/ParentToChild" element={<ParentToChild />} />
         <Route path="/digitalwatch" element={<Digitalwatch />} />
+        <Route path="/functional" element={<Functional/>} />
         <Route path="/tablemapping" element={<TableMapping />} />
+        <Route path="/registerform" element={<RegisterForm/>} />
+
       </Routes>
     </Router>
   );
