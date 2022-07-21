@@ -1,0 +1,14 @@
+.form-control {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.card-main {
+    background-color: darkslategray;
+    width: 50%;
+
+}
+
+.card-last {
+    color: green;
+}
