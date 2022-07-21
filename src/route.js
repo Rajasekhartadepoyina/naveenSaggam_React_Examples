@@ -16,12 +16,6 @@ import EventHandel from "./components/eventHandle";
 import ClassComonent from "./components/class_component_with_style/class_component_with_style"
 import StateManagementClass from "./components/class_state_management/state_management_class_based"
 import Navbar from './components/navbar'
-// import Home from './components/modules/layout/components/home'
-// import Employeeslist from './components/modules/employees/components/employeeslist'
-// import About from './components/modules/layout/components/about'
-// import Userlogin from './components/modules/users/components/userlogin'
-// import Userregister from './components/modules/users/components/userregister'
-// import Pagenotfound from "./components/modules/layout/components/pagenotfound";
 import Home from './components/modules/layout/home'
 import Employeeslist from './components/modules/employees/employeeslist'
 import About from './components/modules/layout/about'
