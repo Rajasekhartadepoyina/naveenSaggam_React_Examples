@@ -23,6 +23,7 @@ import TableMapping from "./components/mapTheTable/TableMapping";
 import RegisterForm from "./components/registerForm";
 import Loginform from "./components/login/Loginform";
 import EventHandel from "./components/eventHandle";
+import List from "./components/List";
 
 
 const AppRoutes = () => {
@@ -48,6 +49,7 @@ const AppRoutes = () => {
         <Route path="/tablemapping" element={<TableMapping />} />
         <Route path="/registerform" element={<RegisterForm />} />
         <Route path="/loginfrom" element={<Loginform />} />
+        <Route path="/listtable" element={<List />} />
 
       </Routes>
     </Router>
