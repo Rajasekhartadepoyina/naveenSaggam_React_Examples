@@ -1,5 +1,5 @@
 import React from "react";
-import { useState} from 'react'
+import { useState } from 'react'
 
 
 let Student = () => {
@@ -16,7 +16,7 @@ let Student = () => {
         ]
     })
 
-    let {students}=state; // Destructuring the
+    let { students } = state; // Destructuring the
     return (
         <React.Fragment>
             {/* <h2>Welcome to the student</h2> */}
