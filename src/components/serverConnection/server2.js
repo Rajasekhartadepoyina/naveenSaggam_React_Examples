@@ -1,9 +1,24 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
+import UserServices from '../serverConnection/userServer2';
 
 let Server1 = () => {
     const [state, setState] = useState({
         user: []
     });
+    useEffect(() => {
+
+        UserServices.getAllUsers().then((responce) => {
+            console.log(responce);
+        }).catch(()=>{
+            
+        })
+
+
+        // setState(()=>({
+        //     user:UserServices.getAllUsers() 
+        // }))
+
+    }, [])
 
     return (
         <React.Fragment>
