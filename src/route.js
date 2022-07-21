@@ -24,8 +24,8 @@ import Functional from "./components/functional-component/functional";
 import TableMapping from "./components/mapTheTable/TableMapping";
 import RegisterForm from "./components/registerForm";
 import Loginform from "./components/login/Loginform";
-import EventHandel from "./components/eventHandle";
-import List from "./components/List";
+
+import List from "./components/Product/List";
 
 
 const AppRoutes = () => {
