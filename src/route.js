@@ -21,7 +21,6 @@ import Userlogin from './components/modules/users/components/userlogin'
 import Userregister from './components/modules/users/components/userregister'
 import Pagenotfound from "./components/modules/layout/components/pagenotfound";
 import Student from "./components/student";
-import Parent from "./components/parent";
 import Functional from "./components/functional-component/functional";
 import TableMapping from "./components/mapTheTable/TableMapping";
 import RegisterForm from "./components/registerForm";
