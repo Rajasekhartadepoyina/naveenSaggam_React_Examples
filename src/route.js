@@ -11,6 +11,7 @@ import Digitalwatch from "./components/Digitalwatch";
 import EventHandel from "./components/eventHandle";
 import Student from "./components/student";
 import Parent from "./components/parent";
+import Functional from "./components/functional-component/functional";
 
 
 const AppRoutes = () => {
@@ -23,6 +24,7 @@ const AppRoutes = () => {
         <Route path="/parent_to_child" element={<Parent />} />
         <Route path="/ParentToChild" element={<ParentToChild />} />
         <Route path="/digitalwatch" element={<Digitalwatch />} />
+        <Route path="/functional" element={<Functional/>} />
       </Routes>
     </Router>
   );
