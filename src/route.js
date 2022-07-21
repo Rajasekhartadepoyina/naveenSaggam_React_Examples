@@ -36,7 +36,7 @@ const AppRoutes = () => {
       <Routes>
         {/* <Route path="/event" element={<EventHandel />} /> */}
         <Route path="/bcard" element={<Bcard />} />
-        {/* <Route path="/event" element={<EventHandel />} /> */}
+        <Route path="/event" element={<EventHandel />} />
         <Route path="/contactapp" element={<ContactApp />} />
         <Route path="/form" element={<FormHandling />} />
         <Route path="/childtoparent" element={<Parent1 />} />
@@ -54,8 +54,9 @@ const AppRoutes = () => {
         <Route path="/functional" element={<Functional />} />
         <Route path="/tablemapping" element={<TableMapping />} />
         <Route path="/CherryServer" element={<CherryServer />} />
-        <Route path="/registerform" element={<RegisterForm/>} />
-
+        <Route path="/registerform" element={<RegisterForm />} />
+        <Route path="/loginfrom" element={<Loginform />} />
+        <Route path="/listtable" element={<List />} />
       </Routes>
     </Router>
   );
