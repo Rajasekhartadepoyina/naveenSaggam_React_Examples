@@ -22,6 +22,7 @@ import Functional from "./components/functional-component/functional";
 import TableMapping from "./components/mapTheTable/TableMapping";
 import RegisterForm from "./components/registerForm";
 import Loginform from "./components/login/Loginform";
+import List from "./components/List";
 
 
 const AppRoutes = () => {
@@ -29,7 +30,7 @@ const AppRoutes = () => {
     <Router>
       {/* <Navbar /> */}
       <Routes>
-        <Route path="/event" element={<EventHandel />} />
+        {/* <Route path="/event" element={<EventHandel />} /> */}
         <Route path="/form" element={<FormHandling />} />
         <Route path="/childtoparent" element={<Parent1 />} />
         <Route path="/" element={<Home />} />
@@ -47,6 +48,7 @@ const AppRoutes = () => {
         <Route path="/tablemapping" element={<TableMapping />} />
         <Route path="/registerform" element={<RegisterForm />} />
         <Route path="/loginfrom" element={<Loginform />} />
+        <Route path="/listtable" element={<List />} />
 
       </Routes>
     </Router>
