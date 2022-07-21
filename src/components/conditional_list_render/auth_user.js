@@ -20,7 +20,7 @@ const AuthUser = () => {
         <React.Fragment>
             <div className='container mt-3'>
                 <div className='row'>
-                    <div className='col-md-5'>
+                    <div className='col-md-6'>
                         <div className='card shadow-lg'>
                             <div className='card-body'>
                                 {
