@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import MessageCard from './MessageCard';
 
 
-function Functional() {
+let Functional=()=> {
 
     return (
         <Fragment>

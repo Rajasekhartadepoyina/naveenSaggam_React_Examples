@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-function MessageCard() {
+let MessageCard = ()=> {
 
     return (
         <Fragment>
