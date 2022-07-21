@@ -31,12 +31,7 @@ function EventHandel() {
     const gm = (value) => {
         setMessage(value)
     }
-
-   
-
-
-
-
+    
     return (
         <div>
             <h1>
