@@ -5,8 +5,8 @@ import {
   Route,
 
 } from "react-router-dom";
+import Bcard from "./components/CountryCard/BcardDesing";
 import ContactApp from "./components/contactAPP/contactApp";
-import EventHandel from "./components/eventHandle";
 import Parent1 from "./components/parent1";
 import FormHandling from "./components/formHandling";
 import ParentToChild from "./components/classBasedComp/parent";
@@ -25,6 +25,8 @@ import TableMapping from "./components/mapTheTable/TableMapping";
 import RegisterForm from "./components/registerForm";
 import Loginform from "./components/login/Loginform";
 import List from "./components/List";
+import EventHandel from "./components/eventHandle";
+import CherryServer from "./components/serverConnection/cherryServer";
 
 
 const AppRoutes = () => {
@@ -32,6 +34,8 @@ const AppRoutes = () => {
     <Router>
       {/* <Navbar /> */}
       <Routes>
+        {/* <Route path="/event" element={<EventHandel />} /> */}
+        <Route path="/bcard" element={<Bcard />} />
         <Route path="/event" element={<EventHandel />} />
         <Route path="/contactapp" element={<ContactApp />} />
         <Route path="/form" element={<FormHandling />} />
@@ -49,10 +53,10 @@ const AppRoutes = () => {
         <Route path="/digitalwatch" element={<Digitalwatch />} />
         <Route path="/functional" element={<Functional />} />
         <Route path="/tablemapping" element={<TableMapping />} />
+        <Route path="/CherryServer" element={<CherryServer />} />
         <Route path="/registerform" element={<RegisterForm />} />
         <Route path="/loginfrom" element={<Loginform />} />
         <Route path="/listtable" element={<List />} />
-
       </Routes>
     </Router>
   );
