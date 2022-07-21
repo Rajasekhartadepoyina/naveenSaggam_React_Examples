@@ -6,12 +6,12 @@ const AuthUser = () => {
     })
 
     const logIn = () => {
-        setState((state) => ({
+        setState(() => ({
             isLoggedIn: true
         }))
     }
     const logOut = () => {
-        setState((state) => ({
+        setState(() => ({
             isLoggedIn: false
         }))
     }
@@ -20,12 +20,12 @@ const AuthUser = () => {
         <React.Fragment>
             <div className='container mt-3'>
                 <div className='row'>
-                    <div className='col-md-5'>
+                    <div className='col-md-6'>
                         <div className='card shadow-lg'>
                             <div className='card-body'>
                                 {
-                                    state.isLoggedIn ? <p className='h3'>welcome mr.Rajasekhar !</p>
-                                        : <p className='h3'>Welcome Guest</p>
+                                    state.isLoggedIn ? <p className='h3'> <i>Welcome mr. Tadepoyina.Rajasekhar!</i></p>
+                                        : <p className='h3'>Welcome Guest!</p>
                                 }
                                 {
                                     state.isLoggedIn ? <button onClick={logOut} className='btn btn-warning btn-sm'>LogOut</button>
