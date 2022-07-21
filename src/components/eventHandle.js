@@ -4,7 +4,7 @@ import img from '../image/download .jpg'
 function EventHandel() {
     const [product, setProduct] = useState({
         Sno: "1Azxx",
-        image: '',
+        image: {img},
         name: 'Watch',
         price: 1200,
         qty: 0,
@@ -24,7 +24,8 @@ function EventHandel() {
     }
     const decrement = () => {
         count--
-        setProduct({...product,})
+        total=total-1200 ==0 ?1200 : total=total-1200
+        setProduct({...product,total})
         setCount(count)
     }
     const gm = (value) => {
@@ -41,20 +42,19 @@ function EventHandel() {
             <h1>
                 Counter
             </h1>
-            <button className=" btn-primary" onClick={increment}>
+            <button className="btn btn-primary" onClick={increment}>
                 Increment
             </button>
             <h1>{count}</h1>
-            <button className=" btn-danger"  onClick={decrement}>Decrement</button>
+            <button className="btn btn-danger"  onClick={decrement}>Decrement</button>
 
             <div >
                 <h1>Wish </h1>
 
                 <h1>{message}</h1>
-                <button onClick={() => gm("Good Morning")}>Good Morning</button>
-                <button onClick={() => gm("Good Afternoon")}>Good Afternoon</button>
-
-                <button onClick={() => gm("Good Evening")}>Good Evening</button>
+                <button className="btn btn-primary" onClick={() => gm("Good Morning")}>Good Morning</button>
+                <button className="btn btn-danger" onClick={() => gm("Good Afternoon")}>Good Afternoon</button>
+                <button class="btn btn-success" onClick={() => gm("Good Evening")}>Good Evening</button>
 
             </div>
             <div>
@@ -62,8 +62,8 @@ function EventHandel() {
 
             </div>
             <div>
-                <table>
-                    <thead>
+                <table class="table table-dark">
+                    <thead >
                         <tr>
                             <th>Sno</th>
                             <th>Image</th>
