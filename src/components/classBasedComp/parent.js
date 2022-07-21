@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import Employee from '../classBasedComp/employee';
 import '../../App.css';
 
-let Parent=()=>{
+let ParentToChild=()=>{
     return(
         <Fragment>
         <nav className="navbar">
@@ -14,4 +14,4 @@ let Parent=()=>{
         </Fragment>
     )
 }
-export default Parent;
+export default ParentToChild;

@@ -1,30 +1,30 @@
-import React, { useState } from 'react'
+ import React, { useState } from 'react'
 
 function EventHandel() {
-    let [count,setCount]=useState({
-        counter:0
+    let [count, setCount] = useState({
+        counter: 0
     })
-    const increment=()=>{
+    const increment = () => {
 
-        // setCount({...count})
+        setCount({...count})
 
     }
-    const decrement=()=>{
+    const decrement = () => {
         setCount(count--)
     }
 
-  return (
-    <div>
-        <h1>
-            Counter 
-        </h1>
-        <button  onClick={increment}>
-            Increment 
-        </button>
-        <h1>{count}</h1>
-        <button onClick={decrement}>Decrement</button>
-    </div>
-  )
+    return (
+        <div>
+            <h1>
+                Counter
+            </h1>
+            <button onClick={increment}>
+                Increment
+            </button>
+            <h1>{count}</h1>
+            <button onClick={decrement}>Decrement</button>
+        </div>
+    )
 }
 
-export default EventHandel
+export default EventHandel;
