@@ -1,0 +1,41 @@
+.navbar {
+    background-color: rgb(177, 188, 235);
+}
+
+.image {
+    margin-top: 10px;
+    height: 60vh;
+    margin-left: 6px;
+    width: 220px;
+
+
+
+}
+
+.row {
+    display: flex;
+}
+
+.card-body {
+
+    box-shadow: 0 0 5px black;
+    width: 207px;
+    margin: 30px;
+    padding: 5px;
+    margin-top: -3px;
+    margin-left: 7px;
+    background-color: aliceblue;
+
+}
+
+.btn-dark {
+    color: azure;
+    background-color: black;
+}
+
+.navbar {
+    background-color: rgb(48, 224, 216);
+    height: 50px;
+}
+
+
