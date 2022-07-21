@@ -9,7 +9,7 @@ class Wishcard extends React.Component {
             <span>wlecome to class based component</span>
             </div>
             <div className="card1">
-                <div className="card-body1">
+                <div>
                     <h2>Welcome to class based compnent</h2>
                     <p>Class-based components are the bread and butter of most modern web apps built in ReactJS.
                         These components are simpl classes (made up of multiple functions that add functionality to the application).

@@ -44,7 +44,7 @@ const AppRoutes = () => {
         <Route path="/statemanagementclass" element={<StateManagementClass></StateManagementClass>}></Route>
         {/* <Route path="/event" element={<EventHandel />} /> */}
         <Route path="/bcard" element={<Bcard />} />
-        <Route path="/event" element={<EventHandel />} />
+        {/* <Route path="/event" element={<EventHandel />} /> */}
         <Route path="/contactapp" element={<ContactApp />} />
         <Route path="/form" element={<FormHandling />} />
         <Route path="/childtoparent" element={<Parent1 />} />
