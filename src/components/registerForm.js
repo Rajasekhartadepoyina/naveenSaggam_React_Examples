@@ -40,10 +40,10 @@ const RegisterForm = () => {
 
 
     }
-   
+
     return (
         <React.Fragment>
-            <pre>{JSON.stringify(state.user)}</pre>
+            {/* <pre>{JSON.stringify(state.user)}</pre> */}
             <div >
                 <p className="h4">REGISTER HERE</p>
             </div>
