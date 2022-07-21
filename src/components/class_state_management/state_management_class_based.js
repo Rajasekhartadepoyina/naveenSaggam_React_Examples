@@ -23,16 +23,16 @@ class Employee extends React.Component {
     render() {
         return (
             <>
-                <div className="navbar">
+                <div className="navbar2">
                     <span >
                         Welcome to state management in class based compponent
                     </span>
                 </div>
-                <div className="card">
+                <div className="card2">
                     <div>Name:{this.state.employees[0].name}</div>
                     <div>Age:{this.state.employees[0].age}</div>
                 </div>
-                <div className="card">
+                <div className="card2">
                     <div>Name:{this.state.employees[1].name}</div>
                     <div>Age:{this.state.employees[1].age}</div>
                 </div>
