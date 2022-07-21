@@ -8,14 +8,17 @@ import {
 import EventHandel from "./components/eventHandle";
 
 import Parent from "./components/parent";
-import Parent_State from "./components/statesProps/state_parent";
+import Parentprops from "./components/statesandprops/states";
+
+
 
 const AppRoutes = () => {
   return (
     <Router>
       <Routes>
         <Route path="/event" element={<EventHandel />} />
-        <Route path="/parent" element={<Parent_State />} />
+        <Route path="/Parentprops" element={<Parentprops />} />
+        
         <Route path="/parent_to_child" element={<Parent />} />
       </Routes>
     </Router>
