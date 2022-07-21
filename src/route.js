@@ -23,8 +23,7 @@ import Parent from "./components/parent";
 import Functional from "./components/functional-component/functional";
 import TableMapping from "./components/mapTheTable/TableMapping";
 import RegisterForm from "./components/registerForm";
-import Loginform from "./components/login/Loginform";
-import List from "./components/List";
+import CherryServer from "./components/serverConnection/cherryServer";
 
 
 const AppRoutes = () => {
@@ -51,9 +50,8 @@ const AppRoutes = () => {
         <Route path="/digitalwatch" element={<Digitalwatch />} />
         <Route path="/functional" element={<Functional />} />
         <Route path="/tablemapping" element={<TableMapping />} />
-        <Route path="/registerform" element={<RegisterForm />} />
-        <Route path="/loginfrom" element={<Loginform />} />
-        <Route path="/listtable" element={<List />} />
+        <Route path="/CherryServer" element={<CherryServer />} />
+        <Route path="/registerform" element={<RegisterForm/>} />
 
       </Routes>
     </Router>
