@@ -24,6 +24,7 @@ import Student from "./components/student";
 import Functional from "./components/functional-component/functional";
 import TableMapping from "./components/mapTheTable/TableMapping";
 import RegisterForm from "./components/registerForm";
+import Getdata from "./components/statesandprops/asyncawait";
 
 
 const AppRoutes = () => {
@@ -33,6 +34,7 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/event" element={<EventHandel />} />
         <Route path="/Parentprops" element={<Parentprops />} />
+        <Route path="/asyncawait" element={<Getdata />} />
         
         <Route path="/" element={<Home />} />
         <Route path="/employees/list" element={<Employeeslist />} />
