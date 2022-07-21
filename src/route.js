@@ -5,6 +5,7 @@ import {
   Route,
 
 } from "react-router-dom";
+import Bcard from "./components/CountryCard/BcardDesing";
 import ContactApp from "./components/contactAPP/contactApp";
 import Parent1 from "./components/parent1";
 import FormHandling from "./components/formHandling";
@@ -23,7 +24,6 @@ import Functional from "./components/functional-component/functional";
 import TableMapping from "./components/mapTheTable/TableMapping";
 import RegisterForm from "./components/registerForm";
 import Loginform from "./components/login/Loginform";
-import EventHandel from "./components/eventHandle";
 import List from "./components/List";
 
 
@@ -32,6 +32,8 @@ const AppRoutes = () => {
     <Router>
       {/* <Navbar /> */}
       <Routes>
+        <Route path="/event" element={<EventHandel />} />
+        <Route path="/bcard" element={<Bcard />} />
         <Route path="/event" element={<EventHandel />} />
         <Route path="/contactapp" element={<ContactApp />} />
         <Route path="/form" element={<FormHandling />} />
