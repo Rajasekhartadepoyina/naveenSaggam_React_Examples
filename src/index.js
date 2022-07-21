@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
 import AppRoutes from './route';
 // import '.bootstarp/dist/css/bootstarp.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
