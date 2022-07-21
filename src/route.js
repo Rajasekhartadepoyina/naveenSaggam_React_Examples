@@ -25,6 +25,7 @@ import TableMapping from "./components/mapTheTable/TableMapping";
 import RegisterForm from "./components/registerForm";
 import Loginform from "./components/login/Loginform";
 import List from "./components/List";
+import EventHandel from "./components/eventHandle";
 
 
 const AppRoutes = () => {
