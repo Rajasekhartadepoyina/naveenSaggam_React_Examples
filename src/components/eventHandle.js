@@ -31,12 +31,7 @@ function EventHandel() {
     const gm = (value) => {
         setMessage(value)
     }
-
-   
-
-
-
-
+    
     return (
         <div>
             <h1>
@@ -47,7 +42,6 @@ function EventHandel() {
             </button>
             <h1>{count}</h1>
             <button className="btn btn-danger"  onClick={decrement}>Decrement</button>
-
             <div >
                 <h1>Wish </h1>
 

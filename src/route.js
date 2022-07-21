@@ -29,7 +29,9 @@ import TableMapping from "./components/mapTheTable/TableMapping";
 import RegisterForm from "./components/registerForm";
 import Loginform from "./components/login/Loginform";
 import List from "./components/List";
-import Connect from "./components/concatApp2/contactApp"
+import ContactAppAxios from "./components/concatApp2/contactApp2"
+// import EventHandel from "./components/eventHandle";
+import CherryServer from "./components/serverConnection/cherryServer";
 
 
 const AppRoutes = () => {
@@ -40,6 +42,7 @@ const AppRoutes = () => {
         <Route path="/event" element={<EventHandel />} />
         <Route path="/classcomponent" element={<ClassComonent></ClassComonent>} />
         <Route path="/statemanagementclass" element={<StateManagementClass></StateManagementClass>}></Route>
+        {/* <Route path="/event" element={<EventHandel />} /> */}
         <Route path="/bcard" element={<Bcard />} />
         <Route path="/event" element={<EventHandel />} />
         <Route path="/contactapp" element={<ContactApp />} />
@@ -58,10 +61,11 @@ const AppRoutes = () => {
         <Route path="/digitalwatch" element={<Digitalwatch />} />
         <Route path="/functional" element={<Functional />} />
         <Route path="/tablemapping" element={<TableMapping />} />
+        <Route path="/CherryServer" element={<CherryServer />} />
         <Route path="/registerform" element={<RegisterForm />} />
         <Route path="/loginfrom" element={<Loginform />} />
         <Route path="/listtable" element={<List />} />
-        <Route path="/connect" element={<Connect></Connect>}></Route>
+        <Route path="/connect" element={<ContactAppAxios></ContactAppAxios>}></Route>
       
 
       </Routes>

@@ -3,22 +3,25 @@
 }
 
 .image {
-    margin-top: 10px;
+
     height: 60vh;
-    margin-left: 6px;
+
     width: 220px;
+    margin-right: 10px;
 
 
 
 }
 
-.row {
+.Main {
     display: flex;
+
+
 }
 
 .card-body {
 
-    box-shadow: 0 0 5px black;
+
     width: 207px;
     margin: 30px;
     padding: 5px;
@@ -37,5 +40,3 @@
     background-color: rgb(48, 224, 216);
     height: 50px;
 }
-
-

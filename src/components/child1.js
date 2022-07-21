@@ -5,10 +5,7 @@ const Child1 = (props) => {
         author:'NAVEEN SAGGAM',
     });
     let clickBtn = ()=>{
-
          props.sendData(state.author);
-
-
     }; 
 
   return (
