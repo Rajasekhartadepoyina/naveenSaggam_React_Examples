@@ -28,7 +28,7 @@ const AuthUser = () => {
                                         : <p className='h3'>Welcome Guest!</p>
                                 }
                                 {
-                                    state.isLoggedIn ? <button onClick={logOut} className='btn btn-warning btn-sm'>LogOut</button>
+                                    state.isLoggedIn ? <button onClick={logOut} className='btn btn-danger btn-sm'>LogOut</button>
                                         : <button onClick={logIn} className='btn btn-success btn-sm'>Login</button>
 
                                 }
