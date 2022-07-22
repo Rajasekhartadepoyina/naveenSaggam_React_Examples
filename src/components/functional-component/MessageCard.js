@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-
+import "./function.css"
 let MessageCard = ()=> {
 
     return (
