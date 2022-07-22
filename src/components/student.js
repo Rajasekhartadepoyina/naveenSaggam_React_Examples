@@ -5,11 +5,11 @@ import { useState } from 'react'
 let Student = () => {
     let [state, Setstate] = useState({
         students: [{
-            name: "john",
+            name: "Raja",
             course: "BTech"
         },
         {
-            name: "laura",
+            name: "Sekhar",
             course: "MBBS"
         }
 
@@ -19,7 +19,7 @@ let Student = () => {
     let { students } = state; // Destructuring the
     return (
         <React.Fragment>
-            {/* <h2>Welcome to the student</h2> */}
+            <h2>Welcome to the student</h2>
             <div className="card">
                 <div className="card-body">
                     <span>Name:{students[0].name}</span><br/>

@@ -11,7 +11,7 @@ constructor(props){
             <React.Fragment>
                 {/* <h2>welcome to the employee component</h2> */}
                 <div className="card-body1 ">
-                    <h2>welcome {this.props.name}</h2>
+                    <h2>Welcome {this.props.name}</h2>
                     <h2>age: {this.props.age} yrs</h2>
                 </div>
             </React.Fragment>

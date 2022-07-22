@@ -5,7 +5,7 @@ class Wishcard extends React.Component {
     render() {
         return (
             <>
-            <div className="navbar1">
+            <div className="navbar text-white">
             <span>wlecome to class based component</span>
             </div>
             <div className="card1">

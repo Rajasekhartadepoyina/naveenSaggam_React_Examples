@@ -32,6 +32,7 @@ import List from "./components/List";
 import ContactAppAxios from "./components/concatApp2/contactApp2"
 // import EventHandel from "./components/eventHandle";
 import CherryServer from "./components/serverConnection/cherryServer";
+import Pagination from "./components/pagination";
 
 
 const AppRoutes = () => {
@@ -63,6 +64,8 @@ const AppRoutes = () => {
         <Route path="/loginfrom" element={<Loginform />} />
         <Route path="/listtable" element={<List />} />
         <Route path="/connect" element={<ContactAppAxios></ContactAppAxios>}></Route>
+        <Route path="/pagination" element={<Pagination/>} />
+
       
 
       </Routes>

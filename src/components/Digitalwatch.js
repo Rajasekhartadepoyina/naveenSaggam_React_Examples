@@ -23,11 +23,14 @@ let Digitalwatch = () => {
         <React.Fragment>
             <div className='container mt-3 w-25'>
                 <div className='card shadow-lg text-center'>
-                    <div className='card-header bg-warning'>
-                        <p className='h4'> Digital Watch </p>
+                    <div className='card-header bg-danger'>
+                        <p className='h4 text-white'> India </p>
                     </div>
                     <div>
-                        <h3> {state.currentTime} </h3>
+                        <h3 className='text-warning'> {state.currentTime} </h3>
+                    </div>
+                    <div className='card-header bg-success'>
+                    <p className='h4 text-white'> Digital Watch </p>
                     </div>
                 </div>
             </div>

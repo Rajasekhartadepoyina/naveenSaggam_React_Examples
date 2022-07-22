@@ -6,7 +6,7 @@ let Functional=()=> {
 
     return (
         <Fragment>
-            <nav className='navbar'>
+            <nav className='navbar text-white'>
                 Welcome to React!
             </nav>
             <MessageCard/>

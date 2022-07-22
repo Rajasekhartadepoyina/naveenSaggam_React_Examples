@@ -8,13 +8,13 @@ class Employee extends React.Component {
         this.state = {
             employees: [
                 {
-                    name: "venkateswarlu",
-                    age: 20
+                    name: "Rajasekhar",
+                    age: 25
                 },
 
                 {
-                    name: "vinay",
-                    age: 20
+                    name: "Luxmireddy",
+                    age: 25
                 }
             ]
         }
@@ -23,7 +23,7 @@ class Employee extends React.Component {
     render() {
         return (
             <>
-                <div className="navbar2">
+                <div className="navbar2 text-white">
                     <span >
                         Welcome to state management in class based compponent
                     </span>

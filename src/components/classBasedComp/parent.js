@@ -6,11 +6,11 @@ import '../classBasedComp/classbase.css';
 let ParentToChild=()=>{
     return(
         <Fragment>
-        <nav className="navbar">
-            <span>welcome to the component</span>
+        <nav className="navbar text-white">
+            <span>Welcome to the component</span>
         </nav>
-        <Employee name="cherry" age={25}/>
-        <Employee name="rahul" age={25}/>
+        <Employee name="Raja" age={25}/>
+        <Employee name="Sekhar" age={25}/>
         
         </Fragment>
     )

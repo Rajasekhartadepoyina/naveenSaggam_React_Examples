@@ -27,8 +27,7 @@ function Loginform() {
 
     return (
         <React.Fragment>
-            {/* <pre>{JSON.stringify(state)}</pre> */}
-            <div className="card-main">
+            <div className="text-danger ">
                 <h4>Login from</h4>
                 <form onSubmit={onSubmitLogin}>
                     <div>
@@ -39,7 +38,7 @@ function Loginform() {
                         <input type="password" value={state.password} name="password" className='form-control' placeholder='password' onChange={handleOnInput} ></input>
                     </div>
                     <div >
-                        <input type="submit" className='form-control' value="login" placeholder='username'></input>
+                        <input type="submit" className='form-control' value="login" placeholder='username'/>
                     </div>
                 </form>
             </div>
