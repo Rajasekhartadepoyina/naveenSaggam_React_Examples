@@ -7,16 +7,13 @@ import FormHandling from "./components/formHandling";
 import ParentToChild from "./components/classBasedComp/parent";
 import Condition from "./components/conditional_list_render/conditional_list_render";
 import Digitalwatch from "./components/Digitalwatch";
-
 import Parentprops from "./components/statesandprops/states";
-
-import Navbar from "./components/navbar";
-import Home from "./components/modules/layout/components/home";
-import Employeeslist from "./components/modules/employees/components/employeeslist";
-import About from "./components/modules/layout/components/about";
-import Userlogin from "./components/modules/users/components/userlogin";
-import Userregister from "./components/modules/users/components/userregister";
-import Pagenotfound from "./components/modules/layout/components/pagenotfound";
+import Home from "./components/modules/layout/home";
+import Employeeslist from "./components/modules/employees/employeeslist";
+import About from "./components/modules/layout/about";
+import Userlogin from "./components/modules/users/userlogin";
+import Userregister from "./components/modules/users/userregister";
+import Pagenotfound from "./components/modules/layout/pagenotfound";
 import Student from "./components/student";
 import Functional from "./components/functional-component/functional";
 import TableMapping from "./components/mapTheTable/TableMapping";
