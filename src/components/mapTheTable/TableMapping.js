@@ -7,7 +7,9 @@ import Table from 'react-bootstrap/Table';
 const TableMapping = () => {
     const [data, setData] = useState([])
     const [value, setValue] = useState('')
-    console.log(data);
+    const [sortValue, setSortValue] = useState('')
+
+    const sortOptions = ["id", "name", "email", "address.street", "address.city", "website"]
 
     const fetchData = async () => {
         const response = await axios.get('https://jsonplaceholder.typicode.com/users')
@@ -18,12 +20,14 @@ const TableMapping = () => {
         fetchData();
     }, [])
 
-    const handleSubmit= async (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        return await axios.get(`https://jsonplaceholder.typicode.com/users?q=${value}`).then((response) => {
-            setData(response.data);
-            setValue("");
-        })
+        return await axios
+            .get(`https://jsonplaceholder.typicode.com/users?q=${value}`)
+            .then((response) => {
+                setData(response.data);
+                setValue("");
+            })
             .catch((err) => console.log(err))
 
     }
@@ -31,12 +35,33 @@ const TableMapping = () => {
         fetchData();
     }
 
+    const handleSort = async (e) => {
+        let value = e.target.value;
+        setSortValue(value);
+        return await axios
+            .get(`https://jsonplaceholder.typicode.com/users?_sort=${value}&_order=asc`)
+            .then((response) => {
+                setData(response.data);
+
+            })
+            .catch((err) => console.log(err))
+    }
+    const handleFilter = async (e) => {
+        return await axios
+            .get(`https://jsonplaceholder.typicode.com/users?website=${value}`)
+            .then((response) => {
+                setData(response.data);
+
+            })
+            .catch((err) => console.log(err))
+    }
+    
     return (
-        <div>
-            <nav className='navbar navbar-dark bg-dark navbar-expand-sm'>
+        <div className='container'>
+            <nav className='navbar navbar-dark bg-warning navbar-expand-sm '>
                 <a href="#" className='navbar-brand'>React with Conditional & list Rendering</a>
             </nav>
-            <div className='container'>
+            <div>
                 <h2 style={{ color: 'green' }}>User List</h2>
                 <p>Specifies the identifier for the table to describe. If the identifier contains spaces or special characters, the entire string must be enclosed in double quotes. Identifiers enclosed in double quotes are also case-sensitive.</p>
                 <div className='mb-4'>
@@ -74,7 +99,24 @@ const TableMapping = () => {
                         }
                     </tbody>
                 </Table>
+                <div className='row'>
+                    <div className='col-8'>
+                        <h5> Sort By:</h5>
+                        <select style={{ width: "50%", borderRadius: "2px", height: "35px" }} onChange={handleSort} value={sortValue}>
+                            <option >Please Select Value</option>
+                            {
+                                sortOptions.map((item, index) => (
+                                    <option value={item} key={index}>{item}</option>
+                                ))}
+                        </select>
 
+                    </div>
+                    <div className='col-4'>
+                        <h5> Filter By Status:</h5>
+                        <button className='btn-success' onClick={()=>handleFilter("Active")}>Active</button>
+                        <button className='btn-danger' onClick={()=>handleFilter("Inactive")}>InActive</button>
+                    </div>
+                </div>
             </div>
         </div>
     )
