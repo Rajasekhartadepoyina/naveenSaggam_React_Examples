@@ -11,6 +11,8 @@ const ContactCard = (props) => {
               <li className="list-group-item">{selectedContact.name}</li>
               <li className="list-group-item">{selectedContact.username}</li>
               <li className="list-group-item">{selectedContact.email}</li>
+              <li className="list-group-item">{selectedContact.phone}</li>
+              <li className="list-group-item">{selectedContact.address.city}</li>
             </ul>
           </div>
       )}

@@ -11,10 +11,12 @@ props.sendContact(data);
       <table className="table table-hover text-center table-striped">
         <thead className="bg-dark text-white">
           <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>username</th>
-            <th>email</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
           </tr>
         </thead>
         <tbody>
@@ -26,6 +28,8 @@ props.sendContact(data);
                   <td>{each.name}</td>
                   <td>{each.username}</td>
                   <td>{each.email}</td>
+                  <td>{each.phone}</td>
+                  <td>{each.address.city}</td>
                 </tr>
               )
             })
