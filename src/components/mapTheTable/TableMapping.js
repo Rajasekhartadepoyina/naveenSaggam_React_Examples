@@ -8,17 +8,24 @@ const TableMapping = () => {
     const [data, setData] = useState([])
     const [value, setValue] = useState('')
     const [sortValue, setSortValue] = useState('')
+    const [currentPage, setCurrentPage] = useState(0)
+    const [pageLimit] = useState(4)
 
     const sortOptions = ["id", "name", "email", "address.street", "address.city", "website"]
 
-    const fetchData = async () => {
-        const response = await axios.get('https://jsonplaceholder.typicode.com/users')
-        setData(response.data)
+    useEffect(() => {
+        fetchData(0, 4, 0);
+    }, [])
+
+    const fetchData = async (start, end, increase) => {
+        return await axios
+            .get(`https://jsonplaceholder.typicode.com/users?_start=${start}&_end=${end}`)
+            .then((response) =>
+                setData(response.data))
+            .catch((err) => console.log(err))
     }
 
-    useEffect(() => {
-        fetchData();
-    }, [])
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -55,7 +62,21 @@ const TableMapping = () => {
             })
             .catch((err) => console.log(err))
     }
-    
+
+    const renderPagination = () => {
+        if (currentPage === 0) {
+            return (
+                <div class="container mt-3">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                        <li class="page-item"><button onClick={()=>fetchData(0, 4, 0)}>Next</button></li>
+                    </ul>
+                </div>
+            )
+        }
+    }
     return (
         <div className='container'>
             <nav className='navbar navbar-dark bg-warning navbar-expand-sm '>
@@ -65,7 +86,7 @@ const TableMapping = () => {
                 <h2 style={{ color: 'green' }}>User List</h2>
                 <p>Specifies the identifier for the table to describe. If the identifier contains spaces or special characters, the entire string must be enclosed in double quotes. Identifiers enclosed in double quotes are also case-sensitive.</p>
                 <div className='mb-4'>
-                    <input type="text" name='search' placeholder='search' value={value} onChange={(e) => setValue(e.target.value)} />
+                    <input type="text" name='search' placeholder='search....' value={value} onChange={(e) => setValue(e.target.value)} />
                     <button type='submit' onClick={handleSubmit}>Search</button>
                     <button onClick={handleReset}>Reset</button>
                 </div>
@@ -99,6 +120,7 @@ const TableMapping = () => {
                         }
                     </tbody>
                 </Table>
+                <renderPagination />
                 <div className='row'>
                     <div className='col-8'>
                         <h5> Sort By:</h5>
@@ -113,8 +135,8 @@ const TableMapping = () => {
                     </div>
                     <div className='col-4'>
                         <h5> Filter By Status:</h5>
-                        <button className='btn-success' onClick={()=>handleFilter("Active")}>Active</button>
-                        <button className='btn-danger' onClick={()=>handleFilter("Inactive")}>InActive</button>
+                        <button className='btn-success' onClick={() => handleFilter("Active")}>Active</button>
+                        <button className='btn-danger' onClick={() => handleFilter("Inactive")}>InActive</button>
                     </div>
                 </div>
             </div>
