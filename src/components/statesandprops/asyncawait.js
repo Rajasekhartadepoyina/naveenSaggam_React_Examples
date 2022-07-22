@@ -13,15 +13,12 @@ function Getdata() {
   const [datainfo, setDatainfo] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get(
-        "https://jsonplaceholder.typicode.com/users"
-      );
+      const res = await axios.get("https://jsonplaceholder.typicode.com/users");
       console.log(res.data);
       setDatainfo(res.data);
     };
     fetchData();
   }, []);
-  
 
   return (
     <div>
